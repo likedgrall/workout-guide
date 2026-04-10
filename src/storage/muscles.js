@@ -3,9 +3,9 @@ export const polygonsDatabaseFront = {
     id: 1,
     name: "Грудь",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Отжимания широким хватом" },
-      { name: "Алмазные отжимания" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Отжимания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=rrlxcrqmE-M" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
     ],
     freeWeight: [],
     gym: [],
@@ -17,9 +17,9 @@ export const polygonsDatabaseFront = {
     id: 2,
     name: "Грудь",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Отжимания широким хватом" },
-      { name: "Алмазные отжимания" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Отжимания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=rrlxcrqmE-M" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
     ],
     freeWeight: [],
     gym: [],
@@ -31,10 +31,10 @@ export const polygonsDatabaseFront = {
     id: 3,
     name: "Широчайшие мышцы",
     bodyWeight: [
-      { name: "Подтягивания широким хватом" },
-      { name: "Подтягивания обратным хватом" },
+      { name: "Подтягивания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=eGo4IYlbE5g" },
+      { name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" },
     ],
-    freeWeight: [{ name: "Тяга гантели в наклоне" }],
+    freeWeight: [{ name: "Тяга гантели в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" }],
     gym: [],
     points:
       "68.5714286 63.2653061 67.3469388 57.1428571 58.7755102 59.5918367 60 64.0816327 60.4081633 83.2653061 65.7142857 78.7755102 66.5306122 69.7959184",
@@ -44,10 +44,10 @@ export const polygonsDatabaseFront = {
     id: 4,
     name: "Широчайшие мышцы",
     bodyWeight: [
-      { name: "Подтягивания широким хватом" },
-      { name: "Подтягивания обратным хватом" },
+      { name: "Подтягивания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=eGo4IYlbE5g" },
+      { name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" },
     ],
-    freeWeight: [{ name: "Тяга гантели в наклоне" }],
+    freeWeight: [{ name: "Тяга гантели в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" }],
     gym: [],
     points:
       "33.877551 78.3673469 33.0612245 71.8367347 31.0204082 63.2653061 32.244898 57.1428571 40.8163265 59.1836735 39.1836735 63.2653061 39.1836735 83.6734694",
@@ -57,10 +57,10 @@ export const polygonsDatabaseFront = {
     id: 5,
     name: "Пресс",
     bodyWeight: [
-      { name: "Планка" },
-      { name: "Скручивания на пресс" },
-      { name: "Подъемы ног лежа" },
-      { name: "Русские скручивания" },
+      { name: "Планка", linkToVideo: "https://www.youtube.com/watch?v=pSHjTRCQxIw" },
+      { name: "Скручивания на пресс", linkToVideo: "https://www.youtube.com/watch?v=Xyd_fa5zoEU" },
+      { name: "Подъемы ног лежа", linkToVideo: "https://www.youtube.com/watch?v=JB2oyawG9KI" },
+      { name: "Русские скручивания", linkToVideo: "https://www.youtube.com/watch?v=wkD8rjkodUI" },
     ],
     freeWeight: [],
     gym: [],
@@ -72,10 +72,10 @@ export const polygonsDatabaseFront = {
     id: 6,
     name: "Пресс",
     bodyWeight: [
-      { name: "Планка" },
-      { name: "Скручивания на пресс" },
-      { name: "Подъемы ног лежа" },
-      { name: "Русские скручивания" },
+      { name: "Планка", linkToVideo: "https://www.youtube.com/watch?v=pSHjTRCQxIw" },
+      { name: "Скручивания на пресс", linkToVideo: "https://www.youtube.com/watch?v=Xyd_fa5zoEU" },
+      { name: "Подъемы ног лежа", linkToVideo: "https://www.youtube.com/watch?v=JB2oyawG9KI" },
+      { name: "Русские скручивания", linkToVideo: "https://www.youtube.com/watch?v=wkD8rjkodUI" },
     ],
     freeWeight: [],
     gym: [],
@@ -86,10 +86,10 @@ export const polygonsDatabaseFront = {
   leftLowerWing: {
     id: 7,
     name: "Бицепс",
-    bodyWeight: [{ name: "Подтягивания обратным хватом" }],
+    bodyWeight: [{ name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" }],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
     ],
     gym: [],
     points:
@@ -99,10 +99,10 @@ export const polygonsDatabaseFront = {
   rightLowerWing: {
     id: 8,
     name: "Бицепс",
-    bodyWeight: [{ name: "Подтягивания обратным хватом" }],
+    bodyWeight: [{ name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" }],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
     ],
     gym: [],
     points:
@@ -113,12 +113,12 @@ export const polygonsDatabaseFront = {
     id: 9,
     name: "Трицепс",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Алмазные отжимания" },
-      { name: "Обратные отжимания от скамьи" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
+      { name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" },
     ],
-    freeWeight: [{ name: "Французский жим" }],
-    gym: [{ name: "Французский жим со штангой" }],
+    freeWeight: [{ name: "Французский жим", linkToVideo: "https://www.youtube.com/watch?v=d_KZxkY_0cM" }],
+    gym: [{ name: "Французский жим со штангой", linkToVideo: "https://www.youtube.com/watch?v=b4VPv1NkEq4" }],
     points:
       "69.3877551 55.5102041 69.3877551 61.6326531 75.9183673 72.6530612 77.5510204 70.2040816 75.5102041 67.3469388",
   },
@@ -127,12 +127,12 @@ export const polygonsDatabaseFront = {
     id: 10,
     name: "Трицепс",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Алмазные отжимания" },
-      { name: "Обратные отжимания от скамьи" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
+      { name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" },
     ],
-    freeWeight: [{ name: "Французский жим" }],
-    gym: [{ name: "Французский жим со штангой" }],
+    freeWeight: [{ name: "Французский жим", linkToVideo: "https://www.youtube.com/watch?v=d_KZxkY_0cM" }],
+    gym: [{ name: "Французский жим со штангой", linkToVideo: "https://www.youtube.com/watch?v=b4VPv1NkEq4" }],
     points:
       "22.4489796 69.3877551 29.7959184 55.5102041 29.7959184 60.8163265 22.8571429 73.0612245",
   },
@@ -142,9 +142,9 @@ export const polygonsDatabaseFront = {
     name: "Трапецивидная мышца",
     bodyWeight: [],
     freeWeight: [
-      { name: "Шраги с гантелями" },
-      { name: "Тяга штанги к подбородку" },
-      { name: "Разведение рук в наклоне" },
+      { name: "Шраги с гантелями", linkToVideo: "https://www.youtube.com/watch?v=cJRVVxmytaM" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
     ],
     gym: [],
     points:
@@ -156,9 +156,9 @@ export const polygonsDatabaseFront = {
     name: "Трапецивидная мышца",
     bodyWeight: [],
     freeWeight: [
-      { name: "Шраги с гантелями" },
-      { name: "Тяга штанги к подбородку" },
-      { name: "Разведение рук в наклоне" },
+      { name: "Шраги с гантелями", linkToVideo: "https://www.youtube.com/watch?v=cJRVVxmytaM" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
     ],
     gym: [],
     points:
@@ -168,11 +168,11 @@ export const polygonsDatabaseFront = {
   sideRight: {
     id: 13,
     name: "Плечи",
-    bodyWeight: [{ name: "Обратные отжимания от скамьи" }],
+    bodyWeight: [{ name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" }],
     freeWeight: [
-      { name: "Жим гантелей вверх" },
-      { name: "Махи гантелями в стороны" },
-      { name: "Тяга штанги к подбородку" },
+      { name: "Жим гантелей вверх", linkToVideo: "https://www.youtube.com/watch?v=qEwKCR5JCog" },
+      { name: "Махи гантелями в стороны", linkToVideo: "https://www.youtube.com/watch?v=3VcKaXpzqRo" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
     ],
     gym: [],
     points:
@@ -182,11 +182,11 @@ export const polygonsDatabaseFront = {
   sideLeft: {
     id: 14,
     name: "Плечи",
-    bodyWeight: [{ name: "Обратные отжимания от скамьи" }],
+    bodyWeight: [{ name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" }],
     freeWeight: [
-      { name: "Жим гантелей вверх" },
-      { name: "Махи гантелями в стороны" },
-      { name: "Тяга штанги к подбородку" },
+      { name: "Жим гантелей вверх", linkToVideo: "https://www.youtube.com/watch?v=qEwKCR5JCog" },
+      { name: "Махи гантелями в стороны", linkToVideo: "https://www.youtube.com/watch?v=3VcKaXpzqRo" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
     ],
     gym: [],
     points:
@@ -198,7 +198,7 @@ export const polygonsDatabaseFront = {
     name: "Голова",
     freeWeight: [],
     gym: [],
-    bodyWeight: [{ name: "Сгибание шеи" }, { name: "Разгибание шеи" }],
+    bodyWeight: [{ name: "Сгибание шеи", linkToVideo: "https://www.youtube.com/watch?v=ZznYty_zPpk" }, { name: "Разгибание шеи", linkToVideo: "https://www.youtube.com/watch?v=FAOH3gEyR8s" }],
     points:
       "42.4489796 2.85714286 40 11.8367347 42.0408163 19.5918367 46.122449 23.2653061 49.7959184 25.3061224 54.6938776 22.4489796 57.5510204 19.1836735 59.1836735 10.2040816 57.1428571 2.44897959 49.7959184 0",
   },
@@ -206,9 +206,9 @@ export const polygonsDatabaseFront = {
   tailRight: {
     id: 16,
     name: "Приводящая мышца",
-    bodyWeight: [{ name: "Боковые выпады" }],
+    bodyWeight: [{ name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" }],
     freeWeight: [],
-    gym: [{ name: "Сведение ног в тренажере" }],
+    gym: [{ name: "Сведение ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=G_8LItOiZ0Q" }],
     points:
       "52.6530612 110.204082 54.2857143 124.897959 60 110.204082 62.0408163 100 64.8979592 94.2857143 60 92.6530612 56.7346939 104.489796",
   },
@@ -216,9 +216,9 @@ export const polygonsDatabaseFront = {
   tailLeft: {
     id: 17,
     name: "Приводящая мышца",
-    bodyWeight: [{ name: "Боковые выпады" }],
+    bodyWeight: [{ name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" }],
     freeWeight: [],
-    gym: [{ name: "Сведение ног в тренажере" }],
+    gym: [{ name: "Сведение ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=G_8LItOiZ0Q" }],
     points:
       "47.755102 110.612245 44.8979592 125.306122 42.0408163 115.918367 40.4081633 113.061224 39.5918367 107.346939 37.9591837 102.44898 34.6938776 93.877551 39.5918367 92.244898 41.6326531 99.1836735 43.6734694 105.306122",
   },
@@ -227,12 +227,12 @@ export const polygonsDatabaseFront = {
     id: 18,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "34.6938776 98.7755102 37.1428571 108.163265 37.1428571 127.755102 34.2857143 137.142857 31.0204082 132.653061 29.3877551 120 28.1632653 111.428571 29.3877551 100.816327 32.244898 94.6938776",
   },
@@ -241,12 +241,12 @@ export const polygonsDatabaseFront = {
     id: 19,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "63.2653061 105.714286 64.4897959 100 66.9387755 94.6938776 70.2040816 101.22449 71.0204082 111.836735 68.1632653 133.061224 65.3061224 137.55102 62.4489796 128.571429 62.0408163 111.428571",
   },
@@ -255,12 +255,12 @@ export const polygonsDatabaseFront = {
     id: 20,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "38.7755102 129.387755 38.3673469 112.244898 41.2244898 118.367347 44.4897959 129.387755 42.8571429 135.102041 40 146.122449 36.3265306 146.530612 35.5102041 140",
   },
@@ -269,12 +269,12 @@ export const polygonsDatabaseFront = {
     id: 21,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "59.5918367 145.714286 55.5102041 128.979592 60.8163265 113.877551 61.2244898 130.204082 64.0816327 139.591837 62.8571429 146.530612",
   },
@@ -283,12 +283,12 @@ export const polygonsDatabaseFront = {
     id: 22,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "32.6530612 138.367347 26.5306122 145.714286 25.7142857 136.734694 25.7142857 127.346939 26.9387755 114.285714 29.3877551 133.469388",
   },
@@ -297,12 +297,12 @@ export const polygonsDatabaseFront = {
     id: 23,
     name: "Квадрицепс",
     bodyWeight: [
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
-      { name: "Боковые выпады" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
+      { name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" },
     ],
-    freeWeight: [{ name: "Приседания со штангой" }],
-    gym: [{ name: "Разгибание ног в тренажере" }],
+    freeWeight: [{ name: "Приседания со штангой", linkToVideo: "https://www.youtube.com/watch?v=SW_C1A-rejs" }],
+    gym: [{ name: "Разгибание ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=YyvSfVjQeL0" }],
     points:
       "71.8367347 113.061224 73.877551 124.081633 73.877551 140.408163 72.6530612 145.714286 66.5306122 138.367347 70.2040816 133.469388",
   },
@@ -330,9 +330,9 @@ export const polygonsDatabaseFront = {
   legRight: {
     id: 26,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "71.4285714 160.408163 73.4693878 153.469388 76.7346939 161.22449 79.5918367 167.755102 78.3673469 187.755102 79.5918367 195.510204 74.6938776 195.510204",
   },
@@ -340,9 +340,9 @@ export const polygonsDatabaseFront = {
   legLeft: {
     id: 27,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "24.8979592 194.693878 27.755102 164.897959 28.1632653 160.408163 26.122449 154.285714 24.8979592 157.55102 22.4489796 161.632653 20.8163265 167.755102 22.0408163 188.163265 20.8163265 195.510204",
   },
@@ -350,9 +350,9 @@ export const polygonsDatabaseFront = {
   legRightDetail: {
     id: 28,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "72.6530612 195.102041 69.7959184 159.183673 65.3061224 158.367347 64.0816327 162.44898 64.0816327 165.306122 65.7142857 177.142857",
   },
@@ -360,9 +360,9 @@ export const polygonsDatabaseFront = {
   legLeftDetail: {
     id: 29,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "35.5102041 158.367347 35.9183673 162.44898 35.9183673 166.938776 35.1020408 172.244898 35.1020408 176.734694 32.244898 182.040816 30.6122449 187.346939 26.9387755 194.693878 27.3469388 187.755102 28.1632653 180.408163 28.5714286 175.510204 28.9795918 169.795918 29.7959184 164.081633 30.2040816 158.77551",
   },
@@ -372,10 +372,10 @@ export const polygonsDatabaseFront = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -387,10 +387,10 @@ export const polygonsDatabaseFront = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -402,10 +402,10 @@ export const polygonsDatabaseFront = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -417,10 +417,10 @@ export const polygonsDatabaseFront = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -432,7 +432,7 @@ export const polygonsDatabaseBack = {
   polygon01: {
     id: 1,
     name: "Голова",
-    bodyWeight: [{ name: "Сгибание шеи" }, { name: "Разгибание шеи" }],
+    bodyWeight: [{ name: "Сгибание шеи", linkToVideo: "https://www.youtube.com/watch?v=ZznYty_zPpk" }, { name: "Разгибание шеи", linkToVideo: "https://www.youtube.com/watch?v=FAOH3gEyR8s" }],
     freeWeight: [],
     gym: [],
     points:
@@ -444,9 +444,9 @@ export const polygonsDatabaseBack = {
     name: "Трапеция",
     bodyWeight: [],
     freeWeight: [
-      { name: "Шраги с гантелями" },
-      { name: "Тяга штанги к подбородку" },
-      { name: "Разведение рук в наклоне" },
+      { name: "Шраги с гантелями", linkToVideo: "https://www.youtube.com/watch?v=cJRVVxmytaM" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
     ],
     gym: [],
     points:
@@ -458,9 +458,9 @@ export const polygonsDatabaseBack = {
     name: "Трапеция",
     bodyWeight: [],
     freeWeight: [
-      { name: "Шраги с гантелями" },
-      { name: "Тяга штанги к подбородку" },
-      { name: "Разведение рук в наклоне" },
+      { name: "Шраги с гантелями", linkToVideo: "https://www.youtube.com/watch?v=cJRVVxmytaM" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
     ],
     gym: [],
     points:
@@ -470,11 +470,11 @@ export const polygonsDatabaseBack = {
   polygon04: {
     id: 4,
     name: "Плечи",
-    bodyWeight: [{ name: "Обратные отжимания от скамьи" }],
+    bodyWeight: [{ name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" }],
     freeWeight: [
-      { name: "Жим гантелей вверх" },
-      { name: "Махи гантелями в стороны" },
-      { name: "Тяга штанги к подбородку" },
+      { name: "Жим гантелей вверх", linkToVideo: "https://www.youtube.com/watch?v=qEwKCR5JCog" },
+      { name: "Махи гантелями в стороны", linkToVideo: "https://www.youtube.com/watch?v=3VcKaXpzqRo" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
     ],
     gym: [],
     points:
@@ -484,11 +484,11 @@ export const polygonsDatabaseBack = {
   polygon05: {
     id: 5,
     name: "Плечи",
-    bodyWeight: [{ name: "Обратные отжимания от скамьи" }],
+    bodyWeight: [{ name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" }],
     freeWeight: [
-      { name: "Жим гантелей вверх" },
-      { name: "Махи гантелями в стороны" },
-      { name: "Тяга штанги к подбородку" },
+      { name: "Жим гантелей вверх", linkToVideo: "https://www.youtube.com/watch?v=qEwKCR5JCog" },
+      { name: "Махи гантелями в стороны", linkToVideo: "https://www.youtube.com/watch?v=3VcKaXpzqRo" },
+      { name: "Тяга штанги к подбородку", linkToVideo: "https://www.youtube.com/watch?v=amCU-ziHITM" },
     ],
     gym: [],
     points:
@@ -498,11 +498,11 @@ export const polygonsDatabaseBack = {
   polygon06: {
     id: 6,
     name: "Верх спины",
-    bodyWeight: [{ name: "Подтягивания широким хватом" }],
+    bodyWeight: [{ name: "Подтягивания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=eGo4IYlbE5g" }],
     freeWeight: [
-      { name: "Тяга гантели в наклоне" },
-      { name: "Разведение рук в наклоне" },
-      { name: "Становая тяга" },
+      { name: "Тяга гантели в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
+      { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" },
     ],
     gym: [],
     points:
@@ -512,11 +512,11 @@ export const polygonsDatabaseBack = {
   polygon07: {
     id: 7,
     name: "Верх спины",
-    bodyWeight: [{ name: "Подтягивания широким хватом" }],
+    bodyWeight: [{ name: "Подтягивания широким хватом", linkToVideo: "https://www.youtube.com/watch?v=eGo4IYlbE5g" }],
     freeWeight: [
-      { name: "Тяга гантели в наклоне" },
-      { name: "Разведение рук в наклоне" },
-      { name: "Становая тяга" },
+      { name: "Тяга гантели в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
+      { name: "Разведение рук в наклоне", linkToVideo: "https://www.youtube.com/watch?v=pYcpY20QaE8" },
+      { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" },
     ],
     gym: [],
     points:
@@ -527,11 +527,11 @@ export const polygonsDatabaseBack = {
     id: 8,
     name: "Трицепс",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Алмазные отжимания" },
-      { name: "Обратные отжимания от скамьи" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
+      { name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" },
     ],
-    freeWeight: [{ name: "Французский жим" }],
+    freeWeight: [{ name: "Французский жим", linkToVideo: "https://www.youtube.com/watch?v=d_KZxkY_0cM" }],
     gym: [],
     points:
       "26.8085106 49.787234 17.8723404 55.7446809 14.4680851 72.3404255 16.5957447 81.7021277 21.7021277 63.8297872 26.8085106 55.7446809",
@@ -541,11 +541,11 @@ export const polygonsDatabaseBack = {
     id: 9,
     name: "Трицепс",
     bodyWeight: [
-      { name: "Отжимания от пола" },
-      { name: "Алмазные отжимания" },
-      { name: "Обратные отжимания от скамьи" },
+      { name: "Отжимания от пола", linkToVideo: "https://www.youtube.com/watch?v=IODxDxX7oi4" },
+      { name: "Алмазные отжимания", linkToVideo: "https://www.youtube.com/watch?v=J0DnG1_S92I" },
+      { name: "Обратные отжимания от скамьи", linkToVideo: "https://www.youtube.com/watch?v=0326dy_-CzM" },
     ],
-    freeWeight: [{ name: "Французский жим" }],
+    freeWeight: [{ name: "Французский жим", linkToVideo: "https://www.youtube.com/watch?v=d_KZxkY_0cM" }],
     gym: [],
     points:
       "73.6170213 50.212766 82.1276596 55.7446809 85.9574468 73.1914894 83.4042553 82.1276596 77.8723404 62.9787234 73.1914894 55.7446809",
@@ -554,10 +554,10 @@ export const polygonsDatabaseBack = {
   polygon10: {
     id: 10,
     name: "Бицепс",
-    bodyWeight: [{ name: "Подтягивания обратным хватом" }],
+    bodyWeight: [{ name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" }],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
     ],
     gym: [],
     points:
@@ -567,10 +567,10 @@ export const polygonsDatabaseBack = {
   polygon11: {
     id: 11,
     name: "Бицепс",
-    bodyWeight: [{ name: "Подтягивания обратным хватом" }],
+    bodyWeight: [{ name: "Подтягивания обратным хватом", linkToVideo: "https://www.youtube.com/watch?v=brhRXlOhsAM" }],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
     ],
     gym: [],
     points:
@@ -580,9 +580,9 @@ export const polygonsDatabaseBack = {
   polygon12: {
     id: 12,
     name: "Низ спины",
-    bodyWeight: [{ name: "Планка" }],
-    freeWeight: [{ name: "Становая тяга" }, { name: "Румынская тяга" }],
-    gym: [{ name: "Гиперэкстензия" }],
+    bodyWeight: [{ name: "Планка", linkToVideo: "https://www.youtube.com/watch?v=pSHjTRCQxIw" }],
+    freeWeight: [{ name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }, { name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }],
+    gym: [{ name: "Гиперэкстензия", linkToVideo: "https://www.youtube.com/watch?v=ph3pddpKzzw" }],
     points:
       "47.6595745 72.7659574 34.4680851 77.0212766 35.3191489 83.4042553 49.3617021 102.12766 46.8085106 82.9787234",
   },
@@ -590,9 +590,9 @@ export const polygonsDatabaseBack = {
   polygon13: {
     id: 13,
     name: "Низ спины",
-    bodyWeight: [{ name: "Планка" }],
-    freeWeight: [{ name: "Становая тяга" }, { name: "Румынская тяга" }],
-    gym: [{ name: "Гиперэкстензия" }],
+    bodyWeight: [{ name: "Планка", linkToVideo: "https://www.youtube.com/watch?v=pSHjTRCQxIw" }],
+    freeWeight: [{ name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }, { name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }],
+    gym: [{ name: "Гиперэкстензия", linkToVideo: "https://www.youtube.com/watch?v=ph3pddpKzzw" }],
     points:
       "52.3404255 72.7659574 65.5319149 77.0212766 64.6808511 83.4042553 50.6382979 102.12766 53.1914894 83.8297872",
   },
@@ -602,10 +602,10 @@ export const polygonsDatabaseBack = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -617,10 +617,10 @@ export const polygonsDatabaseBack = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -632,10 +632,10 @@ export const polygonsDatabaseBack = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -647,10 +647,10 @@ export const polygonsDatabaseBack = {
     name: "Предплечье",
     bodyWeight: [],
     freeWeight: [
-      { name: "Сгибание рук на бицепс с гантелями" },
-      { name: "Молотковые сгибания" },
-      { name: "Сжимание эспандера кистью" },
-      { name: "Сгибание кистей с гантелями" },
+      { name: "Сгибание рук на бицепс с гантелями", linkToVideo: "https://www.youtube.com/watch?v=ykJmrZ5v0Oo" },
+      { name: "Молотковые сгибания", linkToVideo: "https://www.youtube.com/watch?v=zC3nLlEvin4" },
+      { name: "Сжимание эспандера кистью", linkToVideo: "https://www.youtube.com/watch?v=0V7Q5n3P0kE" },
+      { name: "Сгибание кистей с гантелями", linkToVideo: "https://www.youtube.com/watch?v=kwG2ipFRgfo" },
     ],
     gym: [],
     points:
@@ -661,12 +661,12 @@ export const polygonsDatabaseBack = {
     id: 18,
     name: "Ягодицы",
     bodyWeight: [
-      { name: "Ягодичный мостик" },
-      { name: "Приседания с собственным весом" },
-      { name: "Выпады вперед" },
+      { name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" },
+      { name: "Приседания с собственным весом", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
     ],
-    freeWeight: [{ name: "Румынская тяга" }],
-    gym: [{ name: "Гиперэкстензия" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }],
+    gym: [{ name: "Гиперэкстензия", linkToVideo: "https://www.youtube.com/watch?v=ph3pddpKzzw" }],
     points:
       "44.6808511 99.5744681 30.212766 108.510638 29.787234 118.723404 31.4893617 125.957447 47.2340426 121.276596 49.3617021 114.893617",
   },
@@ -675,12 +675,12 @@ export const polygonsDatabaseBack = {
     id: 19,
     name: "Ягодицы",
     bodyWeight: [
-      { name: "Ягодичный мостик" },
-      { name: "Приседания" },
-      { name: "Выпады вперед" },
+      { name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" },
+      { name: "Приседания", linkToVideo: "https://www.youtube.com/watch?v=aclHkVaku9U" },
+      { name: "Выпады вперед", linkToVideo: "https://www.youtube.com/watch?v=QOVaHwm-Q6U" },
     ],
-    freeWeight: [{ name: "Румынская тяга" }],
-    gym: [{ name: "Гиперэкстензия" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }],
+    gym: [{ name: "Гиперэкстензия", linkToVideo: "https://www.youtube.com/watch?v=ph3pddpKzzw" }],
     points:
       "55.3191489 99.1489362 51.0638298 114.468085 52.3404255 120.851064 68.0851064 125.957447 69.787234 119.148936 69.3617021 108.510638",
   },
@@ -688,9 +688,9 @@ export const polygonsDatabaseBack = {
   polygon20: {
     id: 20,
     name: "Приводящая мышца",
-    bodyWeight: [{ name: "Боковые выпады" }],
+    bodyWeight: [{ name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" }],
     freeWeight: [],
-    gym: [{ name: "Сведение ног в тренажере" }],
+    gym: [{ name: "Сведение ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=G_8LItOiZ0Q" }],
     points:
       "48.0851064 122.978723 44.6808511 122.978723 41.2765957 125.531915 45.106383 144.255319 48.5106383 135.744681 48.9361702 129.361702",
   },
@@ -698,9 +698,9 @@ export const polygonsDatabaseBack = {
   polygon21: {
     id: 21,
     name: "Приводящая мышца",
-    bodyWeight: [{ name: "Боковые выпады" }],
+    bodyWeight: [{ name: "Боковые выпады", linkToVideo: "https://www.youtube.com/watch?v=rvqLVxYqEvo" }],
     freeWeight: [],
-    gym: [{ name: "Сведение ног в тренажере" }],
+    gym: [{ name: "Сведение ног в тренажере", linkToVideo: "https://www.youtube.com/watch?v=G_8LItOiZ0Q" }],
     points:
       "51.9148936 122.553191 55.7446809 123.404255 59.1489362 125.957447 54.893617 144.255319 51.9148936 136.170213 51.0638298 129.361702",
   },
@@ -708,9 +708,9 @@ export const polygonsDatabaseBack = {
   polygon22: {
     id: 22,
     name: "Бицепс бедра",
-    bodyWeight: [{ name: "Ягодичный мостик" }],
-    freeWeight: [{ name: "Румынская тяга" }, { name: "Становая тяга" }],
-    gym: [{ name: "Сгибание ног лежа" }],
+    bodyWeight: [{ name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }, { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }],
+    gym: [{ name: "Сгибание ног лежа", linkToVideo: "https://www.youtube.com/watch?v=1Tq3QdYUuHs" }],
     points:
       "28.9361702 122.12766 31.0638298 129.361702 36.5957447 125.957447 35.3191489 135.319149 34.4680851 150.212766 29.3617021 158.297872 28.9361702 146.808511 27.6595745 141.276596 27.2340426 131.489362",
   },
@@ -718,9 +718,9 @@ export const polygonsDatabaseBack = {
   polygon23: {
     id: 23,
     name: "Бицепс бедра",
-    bodyWeight: [{ name: "Ягодичный мостик" }],
-    freeWeight: [{ name: "Румынская тяга" }, { name: "Становая тяга" }],
-    gym: [{ name: "Сгибание ног лежа" }],
+    bodyWeight: [{ name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }, { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }],
+    gym: [{ name: "Сгибание ног лежа", linkToVideo: "https://www.youtube.com/watch?v=1Tq3QdYUuHs" }],
     points:
       "71.4893617 121.702128 69.3617021 128.93617 63.8297872 125.957447 65.5319149 136.595745 66.3829787 150.212766 71.0638298 158.297872 71.4893617 147.659574 72.7659574 142.12766 73.6170213 131.914894",
   },
@@ -728,9 +728,9 @@ export const polygonsDatabaseBack = {
   polygon24: {
     id: 24,
     name: "Бицепс бедра",
-    bodyWeight: [{ name: "Ягодичный мостик" }],
-    freeWeight: [{ name: "Румынская тяга" }, { name: "Становая тяга" }],
-    gym: [{ name: "Сгибание ног лежа" }],
+    bodyWeight: [{ name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }, { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }],
+    gym: [{ name: "Сгибание ног лежа", linkToVideo: "https://www.youtube.com/watch?v=1Tq3QdYUuHs" }],
     points:
       "38.7234043 125.531915 44.2553191 145.957447 40.4255319 166.808511 36.1702128 152.765957 37.0212766 135.319149",
   },
@@ -738,9 +738,9 @@ export const polygonsDatabaseBack = {
   polygon25: {
     id: 25,
     name: "Бицепс бедра",
-    bodyWeight: [{ name: "Ягодичный мостик" }],
-    freeWeight: [{ name: "Румынская тяга" }, { name: "Становая тяга" }],
-    gym: [{ name: "Сгибание ног лежа" }],
+    bodyWeight: [{ name: "Ягодичный мостик", linkToVideo: "https://www.youtube.com/watch?v=wPM8icPu6H8" }],
+    freeWeight: [{ name: "Румынская тяга", linkToVideo: "https://www.youtube.com/watch?v=2SHsk9AzdjA" }, { name: "Становая тяга", linkToVideo: "https://www.youtube.com/watch?v=ytGaGIn3SjE" }],
+    gym: [{ name: "Сгибание ног лежа", linkToVideo: "https://www.youtube.com/watch?v=1Tq3QdYUuHs" }],
     points:
       "61.7021277 125.531915 63.4042553 136.170213 64.2553191 153.191489 60 166.808511 56.1702128 146.382979",
   },
@@ -768,9 +768,9 @@ export const polygonsDatabaseBack = {
   polygon28: {
     id: 28,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "29.3617021 160.425532 28.5106383 167.234043 24.6808511 179.574468 23.8297872 192.765957 25.5319149 197.021277 28.5106383 193.191489 29.787234 180 31.9148936 171.06383 31.9148936 166.808511",
   },
@@ -778,9 +778,9 @@ export const polygonsDatabaseBack = {
   polygon29: {
     id: 29,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "37.4468085 165.106383 35.3191489 167.659574 33.1914894 171.914894 31.0638298 180.425532 30.212766 191.914894 34.0425532 200 38.7234043 190.638298 39.1489362 168.93617",
   },
@@ -788,9 +788,9 @@ export const polygonsDatabaseBack = {
   polygon30: {
     id: 30,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "62.9787234 165.106383 61.2765957 168.510638 61.7021277 190.638298 66.3829787 199.574468 70.6382979 191.914894 68.9361702 179.574468 66.8085106 170.212766",
   },
@@ -798,9 +798,9 @@ export const polygonsDatabaseBack = {
   polygon31: {
     id: 31,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "70.6382979 160.425532 72.3404255 168.510638 75.7446809 179.148936 76.5957447 192.765957 74.4680851 196.595745 72.3404255 193.617021 70.6382979 179.574468 68.0851064 168.085106",
   },
@@ -808,9 +808,9 @@ export const polygonsDatabaseBack = {
   polygon32: {
     id: 32,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "28.5106383 195.744681 30.212766 195.744681 33.6170213 201.702128 30.6382979 220 28.5106383 213.617021 26.8085106 198.297872",
   },
@@ -818,9 +818,9 @@ export const polygonsDatabaseBack = {
   polygon33: {
     id: 33,
     name: "Икроножные мышцы",
-    bodyWeight: [{ name: "Подъемы на носки стоя" }],
+    bodyWeight: [{ name: "Подъемы на носки стоя", linkToVideo: "https://www.youtube.com/watch?v=-M4-G8p8fmc" }],
     freeWeight: [],
-    gym: [{ name: "Подъемы на носки сидя" }],
+    gym: [{ name: "Подъемы на носки сидя", linkToVideo: "https://www.youtube.com/watch?v=YMmgqO8Jo-k" }],
     points:
       "69.787234 195.744681 71.9148936 195.744681 73.6170213 198.297872 71.9148936 213.191489 70.212766 219.574468 67.2340426 202.12766",
   },

@@ -1,35 +1,55 @@
+﻿import { useEffect, useMemo, useState } from "react";
+import { exercisesDatabase } from "../../../storage/exercises.js";
 import styles from "./Modal.module.css";
-import { useMemo, useState, useEffect } from "react";
+
+const normalizeExerciseName = (value = "") =>
+    value
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+        .trim();
 
 function Modal({ data }) {
     const [category, setCategory] = useState("all");
 
-    // если открыли другую мышцу — сбрасываем фильтр на "Все"
     useEffect(() => {
         setCategory("all");
     }, [data?.id]);
 
-    if (!data) return null;
+    const exerciseVideoMap = useMemo(() => {
+        const entries = exercisesDatabase
+            .filter((exercise) => exercise.title)
+            .map((exercise) => [
+                normalizeExerciseName(exercise.title),
+                exercise.videoUrl || "",
+            ]);
 
-    // единый массив упражнений + добавляем category
+        return new Map(entries);
+    }, []);
+
     const exercises = useMemo(() => {
+        if (!data) {
+            return [];
+        }
+
         const categories = ["freeWeight", "gym", "bodyWeight"];
 
         return categories.flatMap((cat) =>
-            (data?.[cat] || []).map((exercise) => ({
+            (data[cat] || []).map((exercise) => ({
                 ...exercise,
                 category: cat,
+                linkToVideo:
+                    exercise.linkToVideo ||
+                    exerciseVideoMap.get(normalizeExerciseName(exercise.name)) ||
+                    "",
             }))
         );
-    }, [data]);
+    }, [data, exerciseVideoMap]);
 
-    // фильтрация
     const filteredExercises = useMemo(() => {
         if (category === "all") return exercises;
-        return exercises.filter((ex) => ex.category === category);
+        return exercises.filter((exercise) => exercise.category === category);
     }, [category, exercises]);
 
-    // кнопки (для удобства и без копипасты)
     const buttons = useMemo(
         () => [
             { key: "all", label: "Все" },
@@ -40,7 +60,9 @@ function Modal({ data }) {
         []
     );
 
-    
+    if (!data) {
+        return null;
+    }
 
     return (
         <div className={styles.modal__elements}>
@@ -51,8 +73,7 @@ function Modal({ data }) {
                     <button
                         key={btn.key}
                         onClick={() => setCategory(btn.key)}
-                        className={`${styles.categoryBtn} ${category === btn.key ? styles.categoryBtnActive : ""
-                            }`}
+                        className={`${styles.categoryBtn} ${category === btn.key ? styles.categoryBtnActive : ""}`}
                         type="button"
                     >
                         {btn.label}
