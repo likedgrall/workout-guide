@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import Hamburger from './components/ui/Hamburger/Hamburger.jsx'
 import ExerciseGuide from './components/pages/ExerciseGuide.jsx'
@@ -10,7 +9,7 @@ import CustomWorkout from './components/pages/CustomWorkout.jsx'
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="app-container">
         <header>
           <Hamburger />
@@ -21,6 +20,7 @@ function App() {
             <Route path="/" element={<ExerciseGuide />} />
             <Route path="/exercises" element={<ExerciseGuide />} />
             <Route path="/custom-workout" element={<CustomWorkout />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
       </div>
