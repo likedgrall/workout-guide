@@ -1,0 +1,694 @@
+:root {
+  --color1: rgb(22, 22, 22);
+  --color2: rgb(238, 245, 255);
+  --color3: rgb(105, 105, 105);
+  --colorShadow: rgba(0, 0, 0, 0.172);
+}
+
+.page {
+  background: linear-gradient(white, rgb(104, 104, 224));
+  min-height: 100vh;
+}
+.page_setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg_container {
+  width: 300px;
+  height: 600px;
+  margin: auto;
+  background-color: transparent;
+}
+
+.modal_container {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 24, 0.5) 0%,
+    rgba(18, 18, 24, 0.4) 100%
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease;
+  z-index: 1900;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close_button {
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.733);
+  transition: 0.4s;
+  font-size: 22px;
+  color: black;
+  border: none;
+  border-radius: 100px;
+}
+
+.close_button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  text-align: center;
+  color: var(--color1);
+  padding-top: 70px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: auto;
+  text-align: center;
+  max-width: 340px;
+  font-size: 18px;
+  color: var(--color1);
+  opacity: 0.5;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.toggle_group {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 10px 24px rgba(64, 82, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.toggle_button {
+  min-width: 180px;
+  padding: 11px 18px;
+  border-radius: 18px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: rgba(22, 22, 22, 0.62);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.toggle_button:hover {
+  color: var(--color1);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.toggle_button:focus-visible {
+  outline: 2px solid rgba(52, 78, 128, 0.18);
+  outline-offset: 2px;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color1);
+  box-shadow:
+    0 8px 18px rgba(78, 99, 145, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+
+  .toggle_group {
+    width: min(100%, 280px);
+    margin-bottom: 36px;
+  }
+
+  .toggle_button {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* СТИЛИ ДЛЯ ПРОГРАММЫ ТРЕНИРОВОК */
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 160px 20px;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(white, rgb(104, 104, 224));
+  min-height: 100vh;
+}
+
+.formCard {
+  background: rgba(255, 255, 255, 0.93);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px var(--colorShadow);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--color1);
+
+  & input {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+}
+
+.inputGroup input[type="number"],
+.inputGroup select {
+  padding: 10px;
+  border: 1px solid rgba(32, 32, 32, 0.15);
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  color: var(--color1);
+}
+
+.radioGroup {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(32, 32, 32, 0.08);
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: var(--color2);
+  color: var(--color1);
+  border: 2px solid var(--color2);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 20px var(--colorShadow);
+}
+
+.submitBtn:hover {
+  filter: brightness(0.97);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fixedBlock {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+  width: min(460px, calc(100vw - 24px));
+  z-index: 1200;
+  margin-bottom: 0;
+  padding: 14px;
+}
+
+.fixedBlock .inputGroup {
+  margin-bottom: 0;
+}
+
+.tabsRow {
+  display: flex;
+  gap: 10px;
+}
+
+.activeTab {
+  background: #dfe7ff;
+  border-color: #dfe7ff;
+}
+
+.resultTitle {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #111827;
+  font-weight: 800;
+}
+
+.resultSubTitle {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.resultText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #f7f9ff;
+  border: 1px solid #e4e9ff;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.exerciseCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(32, 32, 32, 0.1);
+  border-radius: 12px;
+  padding: 14px 48px 16px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.exerciseCard:hover {
+  border-color: #b8c6ff;
+  box-shadow: 0 10px 24px rgba(70, 89, 173, 0.12);
+}
+
+.exerciseCard:focus-visible {
+  outline: 3px solid rgba(34, 197, 94, 0.22);
+  outline-offset: 2px;
+}
+
+.exerciseCardCompleted {
+  background: linear-gradient(180deg, #f4fff7 0%, #e8f9ee 100%);
+  border-color: #86d19f;
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.16);
+}
+
+.exerciseCardHint {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(238, 242, 255, 0.95);
+  color: #4f46e5;
+  border: 1px solid rgba(165, 180, 252, 0.9);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.12);
+  pointer-events: none;
+}
+
+.exerciseCardHintIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.exerciseCardCompleted .exerciseCardHint {
+  background: rgba(240, 253, 244, 0.98);
+  color: #15803d;
+  border-color: rgba(134, 211, 159, 0.95);
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.14);
+}
+
+.exerciseTitle {
+  margin: 0 0 8px 0;
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exerciseMeta {
+  margin: 4px 0;
+  color: var(--color1);
+  opacity: 0.82;
+  
+}
+
+.metaLabel {
+  font-weight: 700;
+}
+
+.metaValue {
+  font-weight: 400;
+}
+
+.exerciseBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badgeWarmup {
+  background: #fff7e8;
+  color: #b45309;
+  border: 1px solid #fde3b0;
+}
+
+.badgeStretch {
+  background: #f0f9ff;
+  color: #0c4a6e;
+  border: 1px solid #bae6fd;
+}
+
+.badgeCompleted {
+  background: #effdf3;
+  color: #15803d;
+  border: 1px solid #a7f3b8;
+}
+
+.exerciseLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  color: #2e49b9;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #d5defe;
+  background: #eef2ff;
+  border-radius: 999px;
+  height: 38px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.exerciseLink:hover {
+  background: #e4ebff;
+}
+
+.videoModal {
+  width: min(900px, 92vw);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+}
+
+.videoModalOverlay {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 24, 0.5) 0%,
+    rgba(18, 18, 24, 0.4) 100%
+  );
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease;
+  z-index: 2000;
+}
+
+.loadingOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 16, 28, 0.42);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2200;
+  animation: fadeIn 0.2s ease;
+}
+
+.loadingSpinnerWrap {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.loadingSpinner {
+  width: 56px;
+  height: 56px;
+  animation: spinnerRotate 1s linear infinite;
+  filter: drop-shadow(0 3px 10px rgba(255, 255, 255, 0.22));
+}
+
+.loadingSpinnerTrack {
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 4;
+}
+
+.loadingSpinnerArc {
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 90 126;
+}
+
+@keyframes spinnerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.videoModalTitle {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.videoFrameWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.videoFrame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .title {
+    margin-bottom: 20px;
+    font-size: clamp(28px, 5.8vw, 36px);
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 22px;
+    padding: 0 6px;
+  }
+
+  .svg_container {
+    width: min(82vw, 320px);
+    height: min(70vh, 560px);
+  }
+
+  .close_button {
+    top: 18px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .videoModal {
+    width: min(94vw, 900px);
+    padding: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: clamp(24px, 7vw, 30px);
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .formCard {
+    padding: 16px;
+    border-radius: 14px;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .inputGroup {
+    margin-bottom: 14px;
+  }
+
+  .checkboxGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .tabsRow {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .submitBtn {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  .resultTitle {
+    font-size: 24px;
+  }
+
+  .resultSubTitle {
+    font-size: 18px;
+  }
+
+  .resultText {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .exerciseCard {
+    padding: 12px;
+    border-radius: 10px;
+    padding-right: 44px;
+  }
+
+  .exerciseTitle {
+    font-size: 15px;
+  }
+
+  .exerciseMeta {
+    font-size: 14px;
+  }
+
+  .exerciseLink {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .videoModalTitle {
+    font-size: 17px;
+  }
+
+  .videoFrameWrap {
+    border-radius: 10px;
+  }
+
+  .fixedBlock {
+    bottom: 10px;
+    width: calc(100vw - 16px);
+    padding: 10px;
+  }
+
+  .fixedBlock .submitBtn {
+    height: 40px;
+    font-size: 14px;
+  }
+}

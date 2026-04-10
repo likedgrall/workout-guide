@@ -1,0 +1,86 @@
+.menuWrap {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 1200;
+}
+
+.button {
+    min-width: 132px;
+    height: 46px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 999px;
+    border: 1px solid rgba(99, 102, 241, 0.28);
+    outline: none;  
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: #1e3a8a;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    
+    box-shadow: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.94);
+    border-color: rgba(99, 102, 241, 0.42);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.button:focus-visible {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 290px;
+}
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+@media (max-width: 640px) {
+    .menuWrap {
+        top: 12px;
+        left: 12px;
+    }
+
+    .button {
+        min-width: 120px;
+        height: 42px;
+        padding: 0 14px;
+        font-size: 15px;
+    }
+
+    .dropdown {
+        left: 0;
+        right: auto;
+        min-width: min(90vw, 320px);
+        max-width: calc(100vw - 24px);
+    }
+}

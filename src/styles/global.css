@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(white, rgb(174, 174, 255));
+    min-height: 100vh;
+    color: #111827;
+    overflow-x: hidden;
+}
+
+img,
+video,
+svg,
+iframe {
+    max-width: 100%;
+}
+
+.page-setting {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #111827;
+}
+
+.page-setting h1 {
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.page-setting p {
+    max-width: 520px;
+    font-size: clamp(16px, 3.8vw, 20px);
+    opacity: 0.85;
+}
+

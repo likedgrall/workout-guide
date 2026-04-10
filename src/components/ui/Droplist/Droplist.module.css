@@ -1,0 +1,48 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow:
+        0 16px 34px rgba(15, 23, 42, 0.2),
+        0 2px 8px rgba(15, 23, 42, 0.1);
+}
+
+.item {
+    margin: 0;
+}
+
+.link {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.link:hover {
+    background: #eef2ff;
+    color: #1e3a8a;
+    transform: translateX(2px);
+}
+
+@media (max-width: 640px) {
+    .list {
+        padding: 6px;
+        border-radius: 14px;
+    }
+
+    .link {
+        padding: 11px 10px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}
