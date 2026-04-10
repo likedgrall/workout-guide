@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import styles from "./css/page.module.css";
 import { exercisesDatabase } from "../../storage/exercises.js";
 
-const API_URL = import.meta.env.VITE_AI_API_URL || "/api/ai";
+const API_URL =
+  import.meta.env.VITE_AI_API_URL ||
+  (import.meta.env.PROD ? "https://ai.iteacher-alex.org/ai" : "/api/ai");
 
 const AI_SYSTEM_PROMPT = `
 Ты профессиональный фитнес-тренер.
