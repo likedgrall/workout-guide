@@ -48,7 +48,7 @@ function CustomWorkout() {
   const [completedExerciseIds, setCompletedExerciseIds] = useState([]);
 
   useEffect(() => {
-    if (!selectedVideo) return;
+    if (!selectedVideo && !isLoading) return;
 
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -56,7 +56,7 @@ function CustomWorkout() {
     return () => {
       document.body.style.overflow = previousOverflow;
     };
-  }, [selectedVideo]);
+  }, [selectedVideo, isLoading]);
 
   const levelMap = {
     beginner: ["junior"],
@@ -228,8 +228,8 @@ ${JSON.stringify(availableExercises, null, 2)}
 
     const prompt = buildPrompt(data, availableExercises);
 
-    console.log("Подходящие упражнения из базы:", availableExercises);
-    console.log("Промпт для AI:", prompt);
+    // console.log("Подходящие упражнения из базы:", availableExercises);
+    // console.log("Промпт для AI:", prompt);
 
     setIsLoading(true);
     try {
@@ -248,7 +248,7 @@ ${JSON.stringify(availableExercises, null, 2)}
       });
 
       const rawText = await response.text();
-      console.log("RAW RESPONSE:", rawText);
+      // console.log("RAW RESPONSE:", rawText);
 
       if (!response.ok) {
         console.error("Ошибка API:", rawText);
@@ -265,7 +265,7 @@ ${JSON.stringify(availableExercises, null, 2)}
         return;
       }
 
-      console.log("Ответ AI:", result);
+      // console.log("Ответ AI:", result);
 
       const aiAnswer =
         result.response ||
@@ -334,9 +334,9 @@ ${JSON.stringify(availableExercises, null, 2)}
       recommendedExercises = [...warmups, ...mains, ...stretches];
       const finalRecommendedIds = recommendedExercises.map((exercise) => exercise.id);
 
-      console.log("Текст тренировки:", parsedWorkout.text);
-      console.log("Рекомендуемые id упражнений:", recommendedIds);
-      console.log("Рекомендуемые упражнения:", recommendedExercises);
+      // console.log("Текст тренировки:", parsedWorkout.text);
+      // console.log("Рекомендуемые id упражнений:", recommendedIds);
+      // console.log("Рекомендуемые упражнения:", recommendedExercises);
 
       setAiResult({
         text: parsedWorkout.text || "Тренировка сформирована.",
@@ -511,9 +511,8 @@ ${JSON.stringify(availableExercises, null, 2)}
             {aiResult.exercises.map((exercise, index) => (
               <div
                 key={exercise.id}
-                className={`${styles.exerciseCard} ${
-                  completedExerciseIds.includes(exercise.id) ? styles.exerciseCardCompleted : ""
-                }`}
+                className={`${styles.exerciseCard} ${completedExerciseIds.includes(exercise.id) ? styles.exerciseCardCompleted : ""
+                  }`}
                 onClick={() => toggleExerciseComplete(exercise.id)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
@@ -527,20 +526,13 @@ ${JSON.stringify(availableExercises, null, 2)}
               >
                 <span className={styles.exerciseCardHint} aria-hidden="true">
                   <svg
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 448 512"
                     className={styles.exerciseCardHintIcon}
                     focusable="false"
                   >
                     <path
-                      d="M5 3.5l10.2 10.2-4.3.9 2.2 5.2-2.6 1.1-2.2-5.2-3.2 3.1z"
+                      d="M448 240v96c0 3.084-.356 6.159-1.063 9.162l-32 136C410.686 499.23 394.562 512 376 512H168a40.004 40.004 0 0 1-32.35-16.473l-127.997-176c-12.993-17.866-9.043-42.883 8.822-55.876 17.867-12.994 42.884-9.043 55.877 8.823L104 315.992V40c0-22.091 17.908-40 40-40s40 17.909 40 40v200h8v-40c0-22.091 17.908-40 40-40s40 17.909 40 40v40h8v-24c0-22.091 17.908-40 40-40s40 17.909 40 40v24h8c0-22.091 17.908-40 40-40s40 17.909 40 40zm-256 80h-8v96h8v-96zm88 0h-8v96h8v-96zm88 0h-8v96h8v-96z"
                       fill="currentColor"
-                    />
-                    <path
-                      d="M15.5 4.5V2.8m3.2 3.5h1.7m-2.5 2.7 1.2 1.2m-5.8-4.1 1.2-1.2"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
                     />
                   </svg>
                 </span>
@@ -672,6 +664,7 @@ ${JSON.stringify(availableExercises, null, 2)}
               />
             </svg>
           </div>
+          <p className={styles.textLoading}>Формируем вашу программу...</p>
         </div>
       )}
     </div>
