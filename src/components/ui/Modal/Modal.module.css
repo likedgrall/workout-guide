@@ -164,8 +164,13 @@
   border-radius: 14px;
   display: block;
 
-  background: linear-gradient(135deg, #d8ff2e 0%, #c9f321 100%);
-  box-shadow: 0 8px 18px rgba(201, 243, 33, 0.22);
+  background: linear-gradient(135deg, #eef8ff 0%, #d6eaff 100%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23395174' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 32h20'/%3E%3Cpath d='M18 24v16M13 26v12M9 28v8M46 24v16M51 26v12M55 28v8'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 31px 31px;
+  border: 1px solid rgba(167, 205, 241, 0.7);
+  box-shadow: 0 8px 18px rgba(125, 166, 211, 0.18);
 }
 
 .workoutName {
